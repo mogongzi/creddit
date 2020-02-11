@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_11_032540) do
+ActiveRecord::Schema.define(version: 2020_02_11_064148) do
 
   create_table "accounts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "first_name"
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 2020_02_11_032540) do
     t.text "body"
     t.integer "upvotes", default: 0
     t.integer "downvotes", default: 0
-    t.integer "total_comments", default: 0
+    t.integer "total_members", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["account_id"], name: "index_posts_on_account_id"
